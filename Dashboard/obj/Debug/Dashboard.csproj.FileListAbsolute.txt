@@ -1,0 +1,9 @@
+c:\users\dell\documents\visual studio 2013\Projects\Dashboard\Dashboard\bin\Debug\Dashboard.exe.config
+c:\users\dell\documents\visual studio 2013\Projects\Dashboard\Dashboard\bin\Debug\Dashboard.exe
+c:\users\dell\documents\visual studio 2013\Projects\Dashboard\Dashboard\bin\Debug\Dashboard.pdb
+c:\users\dell\documents\visual studio 2013\Projects\Dashboard\Dashboard\obj\Debug\Dashboard.csprojResolveAssemblyReference.cache
+c:\users\dell\documents\visual studio 2013\Projects\Dashboard\Dashboard\obj\Debug\Dashboard.Form1.resources
+c:\users\dell\documents\visual studio 2013\Projects\Dashboard\Dashboard\obj\Debug\Dashboard.Properties.Resources.resources
+c:\users\dell\documents\visual studio 2013\Projects\Dashboard\Dashboard\obj\Debug\Dashboard.csproj.GenerateResource.Cache
+c:\users\dell\documents\visual studio 2013\Projects\Dashboard\Dashboard\obj\Debug\Dashboard.exe
+c:\users\dell\documents\visual studio 2013\Projects\Dashboard\Dashboard\obj\Debug\Dashboard.pdb
