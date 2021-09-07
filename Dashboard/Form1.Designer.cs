@@ -34,14 +34,12 @@
             this.btnCalender = new System.Windows.Forms.Button();
             this.btnReports = new System.Windows.Forms.Button();
             this.btnUsers = new System.Windows.Forms.Button();
+            this.btnDashboard = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.UserName = new System.Windows.Forms.Label();
-            this.btnDashboard = new System.Windows.Forms.Button();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -130,11 +128,26 @@
             this.btnUsers.Click += new System.EventHandler(this.btnUsers_Click);
             this.btnUsers.Leave += new System.EventHandler(this.btnUsers_Leave);
             // 
+            // btnDashboard
+            // 
+            this.btnDashboard.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnDashboard.FlatAppearance.BorderSize = 0;
+            this.btnDashboard.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnDashboard.Font = new System.Drawing.Font("Cairo", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDashboard.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(249)))));
+            this.btnDashboard.Location = new System.Drawing.Point(0, 144);
+            this.btnDashboard.Name = "btnDashboard";
+            this.btnDashboard.Size = new System.Drawing.Size(186, 50);
+            this.btnDashboard.TabIndex = 1;
+            this.btnDashboard.Text = "Dashboard";
+            this.btnDashboard.UseVisualStyleBackColor = true;
+            this.btnDashboard.Click += new System.EventHandler(this.btnDashboard_Click);
+            this.btnDashboard.Leave += new System.EventHandler(this.btnDashboard_Leave);
+            // 
             // panel2
             // 
             this.panel2.Controls.Add(this.label1);
             this.panel2.Controls.Add(this.UserName);
-            this.panel2.Controls.Add(this.pictureBox1);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel2.Location = new System.Drawing.Point(0, 0);
             this.panel2.Name = "panel2";
@@ -163,32 +176,6 @@
             this.UserName.TabIndex = 1;
             this.UserName.Text = "User Name";
             // 
-            // btnDashboard
-            // 
-            this.btnDashboard.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnDashboard.FlatAppearance.BorderSize = 0;
-            this.btnDashboard.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnDashboard.Font = new System.Drawing.Font("Cairo", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnDashboard.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(249)))));
-            this.btnDashboard.Location = new System.Drawing.Point(0, 144);
-            this.btnDashboard.Name = "btnDashboard";
-            this.btnDashboard.Size = new System.Drawing.Size(186, 50);
-            this.btnDashboard.TabIndex = 1;
-            this.btnDashboard.Text = "Dashboard";
-            this.btnDashboard.UseVisualStyleBackColor = true;
-            this.btnDashboard.Click += new System.EventHandler(this.btnDashboard_Click);
-            this.btnDashboard.Leave += new System.EventHandler(this.btnDashboard_Leave);
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::Dashboard.Properties.Resources.profile_3;
-            this.pictureBox1.Location = new System.Drawing.Point(60, 22);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(63, 63);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -204,7 +191,6 @@
             this.panel1.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -213,7 +199,6 @@
 
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Button btnDashboard;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label UserName;
