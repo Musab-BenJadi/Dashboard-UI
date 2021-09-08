@@ -28,10 +28,12 @@ namespace Dashboard
         {
             InitializeComponent();
             Region = System.Drawing.Region.FromHrgn(CreateRoundRectRgn(0, 0, Width, Height, 25, 25));
+            panel3.Region = Region.FromHrgn(CreateRoundRectRgn(0, 0, panel3.Width,panel3.Height, 30, 30));
             PnlNav.Height = btnDashboard.Height;
             PnlNav.Top = btnDashboard.Top;
             PnlNav.Left = btnDashboard.Left;
             btnDashboard.BackColor = Color.FromArgb(46, 51, 73);
+            Title.Text = btnDashboard.Text;
 
         }
 
@@ -46,6 +48,7 @@ namespace Dashboard
             PnlNav.Top = btnDashboard.Top;
             PnlNav.Left = btnDashboard.Left;
             btnDashboard.BackColor = Color.FromArgb(46, 51, 73);
+            Title.Text = btnDashboard.Text;
         }
         private void btnDashboard_Leave(object sender, EventArgs e)
         {
@@ -59,6 +62,7 @@ namespace Dashboard
             PnlNav.Left = btnUsers.Left;
             btnUsers.BackColor = Color.FromArgb(46, 51, 73);
             btnDashboard.BackColor = Color.FromArgb(24, 30, 54);
+            Title.Text = btnUsers.Text;
         }
 
         private void btnUsers_Leave(object sender, EventArgs e)
@@ -73,6 +77,7 @@ namespace Dashboard
             PnlNav.Left = btnReports.Left;
             btnReports.BackColor = Color.FromArgb(46, 51, 73);
             btnDashboard.BackColor = Color.FromArgb(24, 30, 54);
+            Title.Text = btnReports.Text;
         }
 
         private void btnCalender_Click(object sender, EventArgs e)
@@ -82,6 +87,7 @@ namespace Dashboard
             PnlNav.Left = btnCalender.Left;
             btnCalender.BackColor = Color.FromArgb(46, 51, 73);
             btnDashboard.BackColor = Color.FromArgb(24, 30, 54);
+            Title.Text = btnCalender.Text;
         }
 
         private void btnReports_Leave(object sender, EventArgs e)
@@ -93,5 +99,27 @@ namespace Dashboard
         {
             btnCalender.BackColor = Color.FromArgb(24, 30, 54);
         }
+
+        private void btnSetting_Click(object sender, EventArgs e)
+        {
+            PnlNav.Height = btnSetting.Height;
+            PnlNav.Top = btnSetting.Top;
+            PnlNav.Left = btnSetting.Left;
+            btnSetting.BackColor = Color.FromArgb(46, 51, 73);
+            btnDashboard.BackColor = Color.FromArgb(24, 30, 54);
+            Title.Text = btnSetting.Text;
+        }
+
+        private void btnSetting_Leave(object sender, EventArgs e)
+        {
+            btnSetting.BackColor = Color.FromArgb(24, 30, 54);
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+            //
+        }
+
     }
 }
